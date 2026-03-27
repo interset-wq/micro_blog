@@ -32,3 +32,11 @@ export FLASK_DEBUG=1
 ```bash
 flask run
 ```
+
+>>> from app import fake
+>>> fake.users(100)
+>>> fake.posts(100)
+
+flask db init
+flask db migrate -m "add body_html to posts"
+flask db upgrade
